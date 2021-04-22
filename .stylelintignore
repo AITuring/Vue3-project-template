@@ -1,1 +1,6 @@
-.ts
+node_modules
+bin
+obj
+*.*
+!*.css
+!*.scss
