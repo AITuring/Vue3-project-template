@@ -1,21 +1,13 @@
 module.exports = {
   env: {
-    es2021: true,
+    es2021: true
   },
-  extends: [
-    'plugin:vue/essential',
-    'airbnb-base',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['plugin:vue/essential', 'airbnb-base', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 12,
     parser: '@typescript-eslint/parser',
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: [
-    'vue',
-    '@typescript-eslint',
-  ],
-  rules: {
-  },
-};
+  plugins: ['vue', '@typescript-eslint'],
+  rules: {}
+}
