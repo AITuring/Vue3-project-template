@@ -1,3 +1,3 @@
 <template>
-    <div>Vuex</div>
+  <div>Vuex</div>
 </template>

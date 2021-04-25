@@ -1,6 +1,6 @@
 // axios使用模板
 <template>
-    <div>axios</div>
+  <div>axios</div>
 </template>
 
 <script lang="ts">
@@ -8,19 +8,17 @@ import { defineComponent } from 'vue'
 import axios from '../utils/axios'
 
 export default defineComponent({
-    setup() {
-        axios
-        .get('/users/XPoet')
-        .then((res) => {
-          console.log('res: ', res)
-        })
-        .catch((err) => {
-          console.log('err: ', err)
-        })  
-    },
+  setup() {
+    axios
+      .get('/users/XPoet')
+      .then((res) => {
+        console.log('res: ', res)
+      })
+      .catch((err) => {
+        console.log('err: ', err)
+      })
+  }
 })
 </script>
 
-<style lang="sass" scoped>
-
-</style>
+<style lang="sass" scoped></style>
