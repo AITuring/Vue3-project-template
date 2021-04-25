@@ -20,3 +20,7 @@ export default defineComponent({
     },
 })
 </script>
+
+<style lang="sass" scoped>
+
+</style>

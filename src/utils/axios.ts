@@ -10,28 +10,28 @@ const axios = Axios.create({
 
 // 前置拦截器(发起请求之前的拦截)
 axios.interceptors.request.use(
-    (response) => {
+    (response: any) => {
         /**
          * 根据实际情况对config做处理
          * 这里没有做任何处理，直接返回了
          */
         return response
     },
-    (error) => {
+    (error: any) => {
         return Promise.reject(error)
     }
 )
 
 // 后置拦截器(获取到响应时的拦截)
 axios.interceptors.response.use(
-    (response) => {
+    (response: any) => {
         /**
          * 根据实际情况对responce和error处理
          * 此处没有处理，直接返回
          */
         return response
     },
-    (error) => {
+    (error: { response: { data: { message: any }; status: any } }) => {
         if (error.response && error.response.data) {
             const code = error.response.status
             const message = error.response.data.message
